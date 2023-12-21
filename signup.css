@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: AlmarenaDisplayRegular,sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+.ad{
+  text-decoration: none;
+}
+.ls{
+  text-decoration: none;
+  color: rgb(92, 92, 236);
+}
+.aj{
+  width: 500px;
+  height: 80px;
+  margin-left: 50px;
+  display: block;
+  margin-bottom: 10px;
+}
+.container{
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 0;
+  padding: 30px;
+  margin: 0 15px;
+  background-color: #ffff;
+  vertical-align: top;
+}
+.details{
+  display: block;
+  position: relative;
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 35px;
+  margin-left: 20px;
+}
+.fields{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  flex-direction: column;
+}
+.form{
+  display: flex;
+}
+
+.footer .have{
+  margin-bottom: 20px;
+  color: rgba(235, 227, 227, 0.932);
+}
+
+.have, .footer{
+  margin-top: 20px;
+  align-items: center;
+  font-size: 13.5px;
+}
+.have{
+  align-content: centre;
+}
+.container header{
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+
+.input-fields{
+  flex: 1;
+  margin: 0 10px;
+  
+  padding: 12px 24px 12px 10px;
+  background: #fff;
+}
+input, select {
+  width: 100%;
+  padding: 10px;
+  height: 50px;
+  margin-bottom: px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: visible;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+.star{
+  color: #EB5757
+}
+.proceed{
+  padding: 20px 0 20px 0;
+  border-radius: 3px;
+  margin-top: 20px;
+  border: 0;
+  background-color: #6a6ff5;;
+  color: white;
+  box-shadow: 0px 0px 50px 0px;
+}
+.proceed:hover{
+  cursor: pointer;
+  background-color: #6969c3;;
+  box-shadow: 0px 8px 15px rgba(0 , 0, 0, 0.2);
+}
+
+/* Styles for larger screens (desktop) */
+.container {
+  display: grid;
+  }
+
+/* Styles for smaller screens (mobile) */
+@media (max-width: 600px) {
+  .container {
+      grid-template-areas:
+          'header'
+          'main'
+          'sidebar';
+      display: flex;
+      flex-direction: column;
+  }
+}
+
